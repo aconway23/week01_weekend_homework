@@ -4,8 +4,8 @@ end
 
 
 def total_cash(pet_shop)
-   total_cash = pet_shop[:admin][:total_cash]
- return total_cash
+  total_cash = pet_shop[:admin][:total_cash]
+  return total_cash
 end
 
 def add_or_remove_cash(pet_shop, cash)
@@ -60,3 +60,12 @@ def pets_by_breed(pet_shop, breed)
   # finally return array of pets we found
   return found_pets_array
 end
+# 
+# def pets_by_breed(pet_shop, breed)
+#   not_found_pets_array = []
+#   for pet in pet_shop[:pets]
+#     if pet[:breed] == breed
+#       not_found_pets_array.pop(pet)
+#     end
+#   end
+# end
