@@ -34,3 +34,29 @@ end
 def stock_count(pet_shop)
   return pet_shop[:pets].count
 end
+
+
+def pets_by_breed(pet_shop, breed)
+  # Create an array, make it empty
+  found_pets_array = []
+
+  # Searching through the array
+  # assigning each value in array
+  # to pet
+
+  # pet = pet_shop[:pets][0]
+  # pet = pet_shop[:pets][1]
+  for pet in pet_shop[:pets]
+
+    # if pets breed is same as
+    # same as breed im looking for
+
+    if pet[:breed] == breed
+      # we want to add it to our array
+      found_pets_array.push(pet)
+    end
+  end
+
+  # finally return array of pets we found
+  return found_pets_array
+end
