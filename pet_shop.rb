@@ -60,7 +60,7 @@ def pets_by_breed(pet_shop, breed)
   # finally return array of pets we found
   return found_pets_array
 end
-# 
+#
 # def pets_by_breed(pet_shop, breed)
 #   not_found_pets_array = []
 #   for pet in pet_shop[:pets]
@@ -69,3 +69,25 @@ end
 #     end
 #   end
 # end
+
+
+# Original wrong code!
+#def find_pet_by_name(pet_shop, name)
+#  found_pet_name_array = []
+#  for pet in pet_shop[:pets]
+  #  if pet[:name] == name
+  #    found_pet_name_array.push(name)
+  #  end
+#  end
+#end
+
+# Correct code!
+def find_pet_by_name(pet_shop, name)
+  for pet in pet_shop[:pets]
+    if pet[:name] == name
+      return pet
+    end
+  end
+
+  return nil
+end
