@@ -107,11 +107,7 @@ def customer_pet_count(customers)
 end
 
 
-
-
-
-
-
-#def stock_count(pet_shop)
-#return pet_shop[:pets].count
-#end
+def add_pet_to_customer(customers, new_pet)
+  customer_pet_count = customers[:pets] += [:new_pet]
+  return customer_pet_count
+end
